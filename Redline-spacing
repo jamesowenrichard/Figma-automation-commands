@@ -1,0 +1,796 @@
+{
+  "id": "lchz8an91f3xwltyxxp",
+  "name": "Redline-spacing",
+  "description": "Used to highlight padding within an instance",
+  "color": "red",
+  "actions": [
+    {
+      "id": "ky0rwq2aqb4cy8spgx",
+      "command": {
+        "name": "getCurrentSelection",
+        "metadata": {},
+        "title": "",
+        "description": ""
+      },
+      "actions": [
+        {
+          "id": "ky22dh5go1r5b1nqbk",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "fontsize",
+              "value": "12"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky0ryvsztwv1zufnz1d",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "w",
+              "value": "{{this.width}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky0rz6rvz0ab5fjabm",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "h",
+              "value": "{{this.height}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky0s1z4tsjkjaocj8d",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "x",
+              "value": "{{this.absoluteRenderBounds.x}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky0s1gvfuljci63fh7j",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "y",
+              "value": "{{this.absoluteRenderBounds.y}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky2360zsway0k60o1um",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "children",
+              "value": "{{this.children.length}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky0snhjmo2ig0cch0rp",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "paddingL",
+              "value": "{{this.paddingLeft}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky22v0xbjssydsjznps",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "paddingR",
+              "value": "{{this.paddingRight}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky22vi6qzf0ntwezfy",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "paddingT",
+              "value": "{{this.paddingTop}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "lci08kb2h8c57w8y4ig",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "value": "{{this.paddingBottom}}",
+              "key": "paddingB"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky0si3cv0irsioteorqr",
+          "command": {
+            "name": "createText",
+            "metadata": {
+              "characters": "{{paddingT}}pt",
+              "fontFamily": "Segoe UI",
+              "fontStyle": "Regular",
+              "fontSize": "{{fontsize}}",
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "CENTER",
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 36,
+                    "g": 208,
+                    "b": 219,
+                    "a": 1
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "ky0soh0iw4ngrwo8gn",
+              "command": {
+                "name": "setPosition",
+                "metadata": {
+                  "x": "{{x}} - 25",
+                  "y": "{{y}} - 10"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "id": "lci2kxaumpilaxapvu8",
+          "command": {
+            "name": "createText",
+            "metadata": {
+              "characters": "{{paddingB}}pt",
+              "fontFamily": "Segoe UI",
+              "fontStyle": "Regular",
+              "fontSize": "{{fontsize}}",
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "CENTER",
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 36,
+                    "g": 208,
+                    "b": 219,
+                    "a": 1
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "lci2kxaucvijoypx9el",
+              "command": {
+                "name": "setPosition",
+                "metadata": {
+                  "x": "{{x}} - 25",
+                  "y": "{{y}} + {{h}} - {{paddingB}} - 10"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "id": "lci0bmhsqga539bmre",
+          "command": {
+            "name": "createText",
+            "metadata": {
+              "characters": "{{paddingL}}pt",
+              "fontFamily": "Segoe UI",
+              "fontStyle": "Regular",
+              "fontSize": "{{fontsize}}",
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "CENTER",
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 219,
+                    "g": 36,
+                    "b": 118,
+                    "a": 1
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "lci0bmhs08uml46h4xy",
+              "command": {
+                "name": "setPosition",
+                "metadata": {
+                  "x": "{{x}}",
+                  "y": "{{y}} + {{h}}"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "id": "lci0ema64s2d95ewfew",
+          "command": {
+            "name": "createRectangle",
+            "metadata": {
+              "layerName": "spec-paddingT",
+              "width": "{{w}}",
+              "height": "{{paddingT}}",
+              "x": "{{x}}",
+              "y": "{{y}}",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 36,
+                    "g": 208,
+                    "b": 219,
+                    "a": 0.5
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "lci0ema6gj6iui0u0hc",
+              "command": {
+                "name": "removeFills",
+                "metadata": {},
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "lci0ema64t8qq5gdaxb",
+              "command": {
+                "name": "addFill",
+                "metadata": {
+                  "fillColor": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 36,
+                        "g": 208,
+                        "b": 219,
+                        "a": 0.33
+                      }
+                    }
+                  ]
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "id": "lci2s18fwnlrwotrd4k",
+          "command": {
+            "name": "createRectangle",
+            "metadata": {
+              "layerName": "spec-paddingB",
+              "width": "{{w}}",
+              "height": "{{paddingB}}",
+              "x": "{{x}}",
+              "y": "{{y}} + {{h}} - {{paddingB}}",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 36,
+                    "g": 208,
+                    "b": 219,
+                    "a": 0.5
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "lci2s18f4seb5if21ed",
+              "command": {
+                "name": "removeFills",
+                "metadata": {},
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "lci2s18f510n6jldnul",
+              "command": {
+                "name": "addFill",
+                "metadata": {
+                  "fillColor": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 36,
+                        "g": 208,
+                        "b": 219,
+                        "a": 0.33
+                      }
+                    }
+                  ]
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "id": "lci0m5n7k7w93qmfmk",
+          "command": {
+            "name": "createRectangle",
+            "metadata": {
+              "layerName": "spec-paddingL",
+              "width": "{{paddingL}}",
+              "height": "{{h}}",
+              "x": "{{x}}",
+              "y": "{{y}}",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 219,
+                    "g": 36,
+                    "b": 118,
+                    "a": 0.5
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "lci0m5n7ta4wuqdbpa",
+              "command": {
+                "name": "removeFills",
+                "metadata": {},
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "lci0m5n7ahymozy2dms",
+              "command": {
+                "name": "addFill",
+                "metadata": {
+                  "fillColor": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 219,
+                        "g": 36,
+                        "b": 118,
+                        "a": 0.33
+                      }
+                    }
+                  ]
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "lci0m5n73ur8xcn90dc",
+              "command": {
+                "name": "duplicate",
+                "metadata": {},
+                "title": "",
+                "description": ""
+              },
+              "actions": [
+                {
+                  "id": "lci0m5n7ag97lsmslt5",
+                  "command": {
+                    "name": "setDimensions",
+                    "metadata": {
+                      "width": "{{paddingR}}"
+                    },
+                    "title": "",
+                    "description": ""
+                  },
+                  "actions": []
+                },
+                {
+                  "id": "lci0m5n7cum5mjllkx",
+                  "command": {
+                    "name": "setPosition",
+                    "metadata": {
+                      "x": "{{x}} + {{w}} - {{paddingR}}"
+                    },
+                    "title": "",
+                    "description": ""
+                  },
+                  "actions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ky22mln6gnmzlafmq1k",
+          "command": {
+            "name": "createRectangle",
+            "metadata": {
+              "layerName": "spec-paddingR",
+              "width": "{{paddingL}}",
+              "height": "{{h}}",
+              "x": "{{x}}",
+              "y": "{{y}}",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 219,
+                    "g": 36,
+                    "b": 118,
+                    "a": 0.5
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "ky22of4fou5ihux65z",
+              "command": {
+                "name": "removeFills",
+                "metadata": {},
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "ky22ojxzkeifmu2zhlo",
+              "command": {
+                "name": "addFill",
+                "metadata": {
+                  "fillColor": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 219,
+                        "g": 36,
+                        "b": 118,
+                        "a": 0.33
+                      }
+                    }
+                  ]
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "ky22x3kksq9jbr3m708",
+              "command": {
+                "name": "duplicate",
+                "metadata": {},
+                "title": "",
+                "description": ""
+              },
+              "actions": [
+                {
+                  "id": "ky22xq59becqrbch7s7",
+                  "command": {
+                    "name": "setDimensions",
+                    "metadata": {
+                      "width": "{{paddingR}}"
+                    },
+                    "title": "",
+                    "description": ""
+                  },
+                  "actions": []
+                },
+                {
+                  "id": "ky22y7m428uaqjb6qozj",
+                  "command": {
+                    "name": "setPosition",
+                    "metadata": {
+                      "x": "{{x}} + {{w}} - {{paddingR}}"
+                    },
+                    "title": "",
+                    "description": ""
+                  },
+                  "actions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ky0s3r523965wkj4oz4",
+          "command": {
+            "name": "createText",
+            "metadata": {
+              "characters": "{{paddingL}}pt",
+              "fontFamily": "Segoe UI",
+              "fontStyle": "Regular",
+              "fontSize": "{{fontsize}}",
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "CENTER",
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 219,
+                    "g": 36,
+                    "b": 118,
+                    "a": 1
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "ky0s6jiirwsfb0h2ylh",
+              "command": {
+                "name": "setPosition",
+                "metadata": {
+                  "x": "{{x}} + {{w}} - {{paddingR}}",
+                  "y": "{{y}} + {{h}}"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "id": "ky236prms7sn3qph96",
+          "command": {
+            "name": "find",
+            "metadata": {
+              "findType": "findChildren",
+              "location": "parentAction",
+              "key": "",
+              "condition": "is"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "ky23c2598c3wh4w3rao",
+              "command": {
+                "name": "if",
+                "metadata": {
+                  "input": "{{children}}",
+                  "condition": "isGreaterThan",
+                  "value": "1"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": [
+                {
+                  "id": "ky23kpgeb0c0apa3eoc",
+                  "command": {
+                    "name": "forEach",
+                    "metadata": {},
+                    "title": "",
+                    "description": ""
+                  },
+                  "actions": [
+                    {
+                      "id": "ky23708eey5tz1h6pd",
+                      "command": {
+                        "name": "if",
+                        "metadata": {
+                          "condition": "is",
+                          "input": "{{index}}",
+                          "value": "0"
+                        },
+                        "title": "",
+                        "description": ""
+                      },
+                      "actions": [
+                        {
+                          "id": "ky241p474esgj6gpnl2",
+                          "command": {
+                            "name": "if",
+                            "metadata": {
+                              "condition": "is",
+                              "input": "{{item.visible}}",
+                              "value": "true"
+                            },
+                            "title": "",
+                            "description": ""
+                          },
+                          "actions": [
+                            {
+                              "id": "ky2386pgx8dwa6e5l8",
+                              "command": {
+                                "name": "createRectangle",
+                                "metadata": {
+                                  "layerName": "spec-spacing",
+                                  "width": "{{itemSpace}}",
+                                  "height": "{{h}}+10",
+                                  "x": "{{x}} + {{paddingL}} + {{item.width}}",
+                                  "y": "{{y}}"
+                                },
+                                "title": "",
+                                "description": ""
+                              },
+                              "actions": [
+                                {
+                                  "id": "ky23deevyo7lpct60y",
+                                  "command": {
+                                    "name": "removeFills",
+                                    "metadata": {},
+                                    "title": "",
+                                    "description": ""
+                                  },
+                                  "actions": []
+                                },
+                                {
+                                  "id": "ky23dkdvc0yih815wgo",
+                                  "command": {
+                                    "name": "addFill",
+                                    "metadata": {
+                                      "fillColor": [
+                                        {
+                                          "type": "SOLID",
+                                          "color": {
+                                            "r": 255,
+                                            "g": 0,
+                                            "b": 255,
+                                            "a": 0.33
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "title": "",
+                                    "description": ""
+                                  },
+                                  "actions": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "ky23dztigl9ate7x24f",
+                              "command": {
+                                "name": "createText",
+                                "metadata": {
+                                  "fontFamily": "Proxima Nova",
+                                  "fontStyle": "Regular",
+                                  "textAlignHorizontal": "LEFT",
+                                  "textAlignVertical": "CENTER",
+                                  "textDecoration": "NONE",
+                                  "textCase": "ORIGINAL",
+                                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                                  "characters": "{{itemSpace}}pt",
+                                  "fontSize": "{{fontsize}}"
+                                },
+                                "title": "",
+                                "description": ""
+                              },
+                              "actions": [
+                                {
+                                  "id": "ky23ew4ubz8e2v1ar1",
+                                  "command": {
+                                    "name": "setPosition",
+                                    "metadata": {
+                                      "y": "{{y}} + {{h}} + 15",
+                                      "x": "{{x}} + {{paddingL}} + {{item.width}}"
+                                    },
+                                    "title": "",
+                                    "description": ""
+                                  },
+                                  "actions": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "createdAt": 1672855932645,
+  "automationWasChanged": true
+}
