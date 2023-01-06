@@ -1,0 +1,240 @@
+{
+  "id": "lcjox3k39g0ial4xg76",
+  "name": "Annotate-selection",
+  "description": "Add an annotation below the selected frame",
+  "color": "yellow",
+  "actions": [
+    {
+      "id": "l3yqgi4o00rszh3wx05p",
+      "command": {
+        "name": "getCurrentSelection",
+        "metadata": {},
+        "title": "",
+        "description": ""
+      },
+      "actions": [
+        {
+          "id": "l3ysgc129q11z4c6bga",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "height",
+              "value": "{{this.height}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "l3ysj56o8xt8aql5l1n",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "width",
+              "value": "{{this.width}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "l3ysn13w254cyfbvd98",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "x",
+              "value": "{{this.x}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "l3ysn1wd2g08k6cm9sj",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "y",
+              "value": "{{this.y}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        }
+      ]
+    },
+    {
+      "id": "l3ysir2yoksig21djyj",
+      "command": {
+        "name": "createFrame",
+        "metadata": {
+          "layerName": "Note",
+          "width": "300",
+          "height": "72",
+          "x": "{{x}}",
+          "y": "{{y}} + {{height}} + 40",
+          "fillColor": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 253,
+                "g": 248,
+                "b": 219,
+                "a": 1
+              }
+            }
+          ]
+        },
+        "title": "",
+        "description": ""
+      },
+      "actions": [
+        {
+          "id": "l3yto3d7liyrmafwfog",
+          "command": {
+            "name": "setSelection",
+            "metadata": {},
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "l3ysq9q4xyi1t7uyq2m",
+          "command": {
+            "name": "setCornerRadius",
+            "metadata": {
+              "cornerRadius": "24"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "l3ytcpjlew47gc26rg6",
+          "command": {
+            "name": "addShadowEffect",
+            "metadata": {
+              "type": "DROP_SHADOW",
+              "x": 0,
+              "y": "0",
+              "radius": "2",
+              "spread": 0,
+              "color": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.15
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "l3ysr1mm5zzcezl0ipv",
+          "command": {
+            "name": "setAutoLayout",
+            "metadata": {
+              "layoutMode": "VERTICAL",
+              "itemSpacing": "8",
+              "horizontalSizingMode": "FIXED",
+              "verticalSizingMode": "AUTO",
+              "horizontalAlignItems": "MIN",
+              "verticalAlignItems": "MIN",
+              "alignment": "PACKED",
+              "paddingLeft": "24",
+              "paddingRight": "24",
+              "paddingTop": "24",
+              "paddingBottom": "24"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "l3ysunfntr10788xfk",
+          "command": {
+            "name": "createText",
+            "metadata": {
+              "characters": "Enter your note",
+              "fontFamily": "Inter",
+              "fontStyle": "Regular",
+              "fontSize": "18",
+              "lineHeight": "24",
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "textAutoResize": "NONE",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51,
+                    "a": 1
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "l3yt671uzu1cxcagg8",
+              "command": {
+                "name": "setAutoLayoutResizing",
+                "metadata": {
+                  "horizontalLayoutAlign": "STRETCH",
+                  "verticalLayoutAlign": "INHERIT"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "l3yt845tegiffed4zrl",
+              "command": {
+                "name": "setTextAutoResize",
+                "metadata": {
+                  "textAutoResize": "HEIGHT"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "id": "l3ytp5x8ufawm4vnzjc",
+          "command": {
+            "name": "groupSelection",
+            "metadata": {},
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        }
+      ]
+    }
+  ],
+  "createdAt": 1672959546435,
+  "automationWasChanged": true
+}
