@@ -1,0 +1,108 @@
+{
+  "id": "lci6mpo7860jox7nny3",
+  "name": "Duplicate-newscreen",
+  "description": "This automation duplicates screen for a new iteration.",
+  "color": "pink",
+  "actions": [
+    {
+      "id": "kz8v8zzfb16xlj0jjt",
+      "command": {
+        "name": "getCurrentSelection",
+        "metadata": {},
+        "title": "",
+        "description": ""
+      },
+      "actions": [
+        {
+          "id": "kz93jbi92vzuzt86yr3",
+          "command": {
+            "name": "forEach",
+            "metadata": {},
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "kzbx3ibamj66x8muvxn",
+              "command": {
+                "name": "setVariable",
+                "metadata": {
+                  "key": "y",
+                  "value": "{{item.absoluteRenderBounds.y}}"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "kzbxnzo19gjqdx1fxc9",
+              "command": {
+                "name": "setVariable",
+                "metadata": {
+                  "key": "w",
+                  "value": "{{item.width}}"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "kzbx33lah4dms56qelj",
+              "command": {
+                "name": "setVariable",
+                "metadata": {
+                  "key": "x",
+                  "value": "{{item.absoluteRenderBounds.x}}"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "kzbxn890ymp6mzpomm",
+              "command": {
+                "name": "setVariable",
+                "metadata": {
+                  "key": "h",
+                  "value": "{{item.height}}"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "kz8vb3qb6327w24o3n8",
+              "command": {
+                "name": "duplicate",
+                "metadata": {},
+                "title": "",
+                "description": ""
+              },
+              "actions": [
+                {
+                  "id": "kz8xwhb0bjksqdjqwov",
+                  "command": {
+                    "name": "setPosition",
+                    "metadata": {
+                      "x": "{{x}} + {{w}} + 100",
+                      "y": ""
+                    },
+                    "title": "",
+                    "description": ""
+                  },
+                  "actions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "createdAt": 1672868362615,
+  "automationWasChanged": true
+}
