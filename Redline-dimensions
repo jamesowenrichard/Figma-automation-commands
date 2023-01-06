@@ -1,0 +1,340 @@
+{
+  "id": "lchzm0qo6j667uqxcdp",
+  "name": "Redlines-dimensions",
+  "description": "Best if used on an instance",
+  "color": "red",
+  "actions": [
+    {
+      "id": "ky0rwq2aqb4cy8spgx",
+      "command": {
+        "name": "getCurrentSelection",
+        "metadata": {},
+        "title": "",
+        "description": ""
+      },
+      "actions": [
+        {
+          "id": "ky0ryvsztwv1zufnz1d",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "w",
+              "value": "{{this.width}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky0rz6rvz0ab5fjabm",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "h",
+              "value": "{{this.height}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky0s1z4tsjkjaocj8d",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "x",
+              "value": "{{this.x}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky0s1gvfuljci63fh7j",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "y",
+              "value": "{{this.y}}"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky20hexzsnn5lo051fo",
+          "command": {
+            "name": "setVariable",
+            "metadata": {
+              "key": "fontsize",
+              "value": "11"
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": []
+        },
+        {
+          "id": "ky0s06nku72ri7274nj",
+          "command": {
+            "name": "createLine",
+            "metadata": {
+              "width": "{{w}}",
+              "y": "{{y}}-5",
+              "x": "{{x}}",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 219,
+                    "g": 36,
+                    "b": 118,
+                    "a": 1
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "ky0s2e9d39yur3kp69w",
+              "command": {
+                "name": "addStroke",
+                "metadata": {
+                  "strokeColor": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 219,
+                        "g": 36,
+                        "b": 118,
+                        "a": 1
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "ky1zdpfkmqr3z4qd3ye",
+              "command": {
+                "name": "setProperty",
+                "metadata": {
+                  "property": "strokeCap",
+                  "value": "ARROW_LINES"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "id": "ky0s3r523965wkj4oz4",
+          "command": {
+            "name": "createText",
+            "metadata": {
+              "characters": "width: {{w}}pt",
+              "fontFamily": "Segoe UI",
+              "fontStyle": "Regular",
+              "fontSize": "{{fontsize}}",
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "CENTER",
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "textAutoResize": "NONE",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 219,
+                    "g": 36,
+                    "b": 118,
+                    "a": 1
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "ky0s6jiirwsfb0h2ylh",
+              "command": {
+                "name": "setPosition",
+                "metadata": {
+                  "x": "{{x}}",
+                  "y": "{{y}} - 30"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "ky2296onwqxwqroq2u",
+              "command": {
+                "name": "setDimensions",
+                "metadata": {
+                  "width": "{{w}}"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "id": "ky1zher4wxqknu2logo",
+          "command": {
+            "name": "createLine",
+            "metadata": {
+              "height": "",
+              "x": "",
+              "y": "",
+              "width": "{{h}}",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 219,
+                    "g": 36,
+                    "b": 118,
+                    "a": 1
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "ky1zighmsktu01vvxa9",
+              "command": {
+                "name": "addStroke",
+                "metadata": {
+                  "strokeColor": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 219,
+                        "g": 36,
+                        "b": 118,
+                        "a": 1
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "ky20dof35sdciykreqp",
+              "command": {
+                "name": "setRotation",
+                "metadata": {
+                  "rotation": "-90"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "ky20evqzgxgvyuzrcy7",
+              "command": {
+                "name": "setPosition",
+                "metadata": {
+                  "x": "{{x}} + {{w}} + 5",
+                  "y": "{{y}}"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            },
+            {
+              "id": "ky1zik24f6we7i3gvli",
+              "command": {
+                "name": "setProperty",
+                "metadata": {
+                  "value": "ARROW_LINES",
+                  "property": "strokeCap"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "id": "ky0si3cv0irsioteorqr",
+          "command": {
+            "name": "createText",
+            "metadata": {
+              "characters": "height: {{h}}pt",
+              "fontFamily": "Segoe UI",
+              "fontStyle": "Regular",
+              "fontSize": "{{fontsize}}",
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "CENTER",
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "fillColor": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 219,
+                    "g": 36,
+                    "b": 118,
+                    "a": 1
+                  }
+                }
+              ]
+            },
+            "title": "",
+            "description": ""
+          },
+          "actions": [
+            {
+              "id": "ky0soh0iw4ngrwo8gn",
+              "command": {
+                "name": "setPosition",
+                "metadata": {
+                  "x": "{{x}} + {{w}} + 15",
+                  "y": "{{y}} + ( ( {{h}} - {{fontsize}} ) / 4)"
+                },
+                "title": "",
+                "description": ""
+              },
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "createdAt": 1672856572992,
+  "automationWasChanged": true
+}
